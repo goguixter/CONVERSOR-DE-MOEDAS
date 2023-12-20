@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    padding: 2% 30%;
+    background: url(./assets/bg.webp);
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+main{
+    box-shadow: 4px 8px 8px rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+    border: solid 4px #e57918;
+    border-radius: 30px;
+    padding: 15px;
+}
+.inputs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.labels{
+    width: 80%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #e57918;
+    font-size: 18px;
+    font-weight: 900
+}
+.select{
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 18px;
+    width: 80%;
+    height: 26px;
+    margin: 10px 0;
+    box-shadow: 1px 5px 5px rgba(0,0,0,0.2);
+}
+.botao-conversor{
+    cursor: pointer;
+    box-shadow: 1px 5px 5px rgba(0,0,0,0.2);
+    border: solid 2px transparent;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #e57918;
+    height: 30px;
+    display: block;
+    width: 80%;
+    height: 40px;
+    margin: 20px auto;
+
+}
+.botao-conversor:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #e57918;
+    border-color: #e57918;
+}
+.botao-conversor:active{
+    background-color: #e57918;
+    opacity: 0.4;
+    color: #fff;
+    border-color: #fff;
+}
+.results-wrapper{
+    background-color: rgba(255, 255, 255, 0.5);
+    border: solid 2px #e57918;
+    border-radius: 30px;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding: 2%;
+    box-shadow: 1px 5px 5px rgba(0,0,0,0.2);
+}
+img{
+    
+    margin: 0 auto;
+    width: 100px;
+    display: block;
+}
+.results-wrapper p{
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+
+}
+.conversor{
+    width: 60px;
+    margin: 20px auto;
+}
+@media screen and (max-width: 900px){
+    body{
+        padding: 2% 20%;
+    }
+}
+@media screen and (max-width: 500px){
+    body{
+        padding: 2% 10%;
+    }
+    .results-wrapper p{
+        font-size: 14px;
+    }
+    .conversor{
+        width: 45px;
+    }
+    img{
+        width: 80px;
+    }
+}
+@media screen and (max-width: 400px){
+    body{
+        padding: 2% 5%;
+    }
+    .botao-conversor{
+        font-size: 14px;
+    }
+    .labels{
+        font-size: 14px;
+    }
+    .select{
+        font-size: 14px;
+    }
+}
